@@ -1,0 +1,21 @@
+# Site settings
+title: Programmed By Prana
+header-img: img/home-bg.png
+email: tracir@gmail.com
+copyright_name: Traci7822
+description: > # this means to ignore newlines until "baseurl:"
+  A blog
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: programprana
+github_username:  Traci7822
+learn_profile: Traci7822
+email_username: tracir@gmail.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
