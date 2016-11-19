@@ -16,6 +16,7 @@ First I created a method in my controller that would allow me to access the arra
 
 ```
 *app/controllers/sequences_controller.rb*
+
 def ids
     @ids = Sequence.all.map { |sequence| sequence.id  }
     render json: @ids
@@ -25,6 +26,7 @@ def ids
 Then I had to make a route so that I could access that data:
 ```
 *config/routes.rb*
+
   get '/sequence_ids', to: 'sequences#ids'
 ```
 
@@ -39,6 +41,7 @@ In my document ready function I create the event listener to trigger when 'Next 
 
 ```
 *app/assets/javascripts/script.js*
+
 $(".js-next").on("click", function() {
     scrollSequence();
   });
@@ -48,6 +51,7 @@ Now I can access the array of sequence id's using jQuery:
 
 ```
 *app/assets/javascripts/script.js*
+
 function scrollSequence(){
   $.get('/sequence_ids', function(data) {
     var idIndex = data.indexOf(id);
