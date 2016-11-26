@@ -101,47 +101,47 @@ Then build a service which will get the json data that I want to show:
 
 Then I use the service within my controller:
 
-> */app/assets/javascripts/app/controllers/StationController.js*
-> 
-> function StationController($scope, StationService){
->   StationService
->     .getStations()
->     .then(function (res) {
->       $scope.stationList = res.data;
->     })
-> }
-> 
-> angular
->   .module('app')
->   .controller('StationController', StationController);
+```
+*/app/assets/javascripts/app/controllers/StationController.js*
+
+function StationController($scope, StationService){
+StationService
+.getStations()
+.then(function (res) {
+$scope.stationList = res.data;
+})
+}
+
+angular
+.module('app')
+.controller('StationController', StationController);
+```
 
 And finally in my view, I output the data:
 
-*/app/assets/javascripts/app/stations/stations.html*```
+> */app/assets/javascripts/app/stations/stations.html*
+> 
+> <div ng-controller="StationController">
+> <table>
+> <th>City</th>
+> <th>Name</th>
+> <th>Phone #</th>
+> <th>Address</th>
+> <th>Business Hours</th>
+> <th>EV Connector Types</th>
+> <th>Fuel Type</th>
+> <tr ng-repeat="station in stationList">
+> <td>{{station.city}}</td>
+> <td>{{station.name}}</a></td>
+> <th>{{station.phone}}</th>
+> <th>{{station.street_address}}</th>
+> <td>{{station.hours}}</td>
+> <td>{{station.ev_connector_types}}</td>
+> <td>{{station.fuel_type_code}}</td>
+> </tr>
+> </table>
+> </div>
 
-
-
-<div ng-controller="StationController">
-<table>
-<th>City</th>
-<th>Name</th>
-<th>Phone #</th>
-<th>Address</th>
-<th>Business Hours</th>
-<th>EV Connector Types</th>
-<th>Fuel Type</th>
-<tr ng-repeat="station in stationList">
-<td>{{station.city}}</td>
-<td>{{station.name}}</a></td>
-<th>{{station.phone}}</th>
-<th>{{station.street_address}}</th>
-<td>{{station.hours}}</td>
-<td>{{station.ev_connector_types}}</td>
-<td>{{station.fuel_type_code}}</td>
-</tr>
-</table>
-</div>
-```
 
 
 was a tough one to figure out but a neat way to learn how rails and angular can work together using external resources!
