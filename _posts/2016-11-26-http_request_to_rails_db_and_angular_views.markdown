@@ -126,10 +126,9 @@ angular
 And finally in my view, I output the data:
 ```
 **/app/assets/javascripts/app/stations/stations.html*
-```
 
-<div ng-controller="StationController">
-  <table>
+#<div ng-controller="StationController">
+ # <table>
     <th>City</th>
     <th>Name</th>
     <th>Phone #</th>
@@ -148,7 +147,6 @@ And finally in my view, I output the data:
     </tr>
   </table>
 </div>
-```
 ```
 
 This was a tough one to figure out but a neat way to learn how rails and angular can work together using external resources!
