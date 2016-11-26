@@ -119,8 +119,8 @@ angular
 
 And finally in my view, I output the data:
 
-> */app/assets/javascripts/app/stations/stations.html*
-> 
+ */app/assets/javascripts/app/stations/stations.html*
+
 > <div ng-controller="StationController">
 > <table>
 > <th>City</th>
