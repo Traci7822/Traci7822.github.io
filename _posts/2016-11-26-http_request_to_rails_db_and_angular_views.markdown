@@ -117,33 +117,32 @@ Then I use the service within my controller:
 
 And finally in my view, I output the data:
 
-```
 > */app/assets/javascripts/app/stations/stations.html*
-> 
-> 
+>  
+>  
 > <div ng-controller="StationController">
-> <table>
-> <th>City</th>
-> <th>Name</th>
-> <th>Phone #</th>
-> <th>Address</th>
-> <th>Business Hours</th>
-> <th>EV Connector Types</th>
-> <th>Fuel Type</th>
-> <tr ng-repeat="station in stationList">
-> <td>{{station.city}}</td>
-> <td>{{station.name}}</a></td>
-> <th>{{station.phone}}</th>
-> <th>{{station.street_address}}</th>
-> <td>{{station.hours}}</td>
-> <td>{{station.ev_connector_types}}</td>
-> <td>{{station.fuel_type_code}}</td>
-> </tr>
-> </table>
+> 	<table>
+> 		<th>City</th>
+> 		<th>Name</th>
+> 		<th>Phone #</th>
+> 		<th>Address</th>
+> 		<th>Business Hours</th>
+> 		<th>EV Connector Types</th>
+> 		<th>Fuel Type</th>
+> 		<tr ng-repeat="station in stationList">
+> 			<td>{{station.city}}</td>
+> 			<td>{{station.name}}</a></td>
+> 			<th>{{station.phone}}</th>
+> 			<th>{{station.street_address}}</th>
+> 			<td>{{station.hours}}</td>
+> 			<td>{{station.ev_connector_types}}</td>
+> 			<td>{{station.fuel_type_code}}</td>
+> 		</tr>
+> 	</table>
 > </div>
-```
 
-This was a tough one to figure out but a neat way to learn how rails and angular can work together using external resources!
+
+was a tough one to figure out but a neat way to learn how rails and angular can work together using external resources!
 
 
 
