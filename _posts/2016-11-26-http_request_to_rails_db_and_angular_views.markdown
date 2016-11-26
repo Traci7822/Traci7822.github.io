@@ -13,12 +13,12 @@ I am using data from data.colorado.gov to populate a database of Colorado Altern
 
 First create a rake task to get the data:
 
-`> rails g task import_stations `
+> rails g task import_stations 
 
 Then build out the rake task to retrieve and parse the data then create Rails objects with the data:
 
 
-> */lib/tasks/import_stations.rake*
+> */lib/tasks/importstations.rake*
 > 
 > require 'net/http'
 > 
@@ -36,7 +36,7 @@ Then build out the rake task to retrieve and parse the data then create Rails ob
 
 Over in my StationsController I have my create method:
 
-> */app/controllers/stations_controller.rb*
+> */app/controllers/stationscontroller.rb*
 > 
 >   def create
 >     @station = Station.new(station_params)
@@ -56,7 +56,7 @@ Over in my StationsController I have my create method:
 
 I serialize the data with ActiveModel:Serializer
 
-> */app/serializers/station_serializer.rb*
+> */app/serializers/stationserializer.rb*
 > 
 > class StationSerializer < ActiveModel::Serializer
 >   attributes :id, :fuel_type_code, :name, :street_address, :phone, :hours, :station_id, :city, :state, :zip, :ev_connector_types
