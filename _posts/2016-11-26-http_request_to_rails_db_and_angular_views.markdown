@@ -13,7 +13,7 @@ I am using data from data.colorado.gov to populate a database of Colorado Altern
 
 First create a rake task to get the data:
 
-> rails g task import_stations 
+`> rails g task import_stations `
 
 Then build out the rake task to retrieve and parse the data then create Rails objects with the data:
 
