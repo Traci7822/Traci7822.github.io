@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HTTP request to Rails DB & Angular Views"
-date:   2016-11-26 19:26:41 +0000
+date:   2016-11-26 14:26:41 -0500
 ---
 
 
@@ -126,6 +126,7 @@ angular
 And finally in my view, I output the data:
 ```
 **/app/assets/javascripts/app/stations/stations.html*
+```
 
 <div ng-controller="StationController">
   <table>
@@ -147,6 +148,7 @@ And finally in my view, I output the data:
     </tr>
   </table>
 </div>
+```
 ```
 
 This was a tough one to figure out but a neat way to learn how rails and angular can work together using external resources!
