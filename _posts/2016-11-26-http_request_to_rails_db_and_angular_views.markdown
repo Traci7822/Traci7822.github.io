@@ -117,6 +117,7 @@ Then I use the service within my controller:
 
 And finally in my view, I output the data:
 
+```
 > */app/assets/javascripts/app/stations/stations.html*
 > 
 > 
@@ -140,7 +141,7 @@ And finally in my view, I output the data:
 > </tr>
 > </table>
 > </div>
-
+```
 
 This was a tough one to figure out but a neat way to learn how rails and angular can work together using external resources!
 
