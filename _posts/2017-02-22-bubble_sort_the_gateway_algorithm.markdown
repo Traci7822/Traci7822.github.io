@@ -11,7 +11,7 @@ The following video comes Cracking The Coding Interview by Gayle Laakmann McDowe
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6Gv8vg0kcHc?ecver=1" frameborder="0" allowfullscreen></iframe>
 
-Here is a Ruby example that came out of a bubble sort study group I participated in the other day to solve the accompanying HackerRank challenge ([https://www.hackerrank.com/challenges/ctci-bubble-sort](https://www.hackerrank.com/challenges/ctci-bubble-sort))
+Here is a Ruby example that came out of a bubble sort study group I participated in the other day to solve the accompanying HackerRank challenge [https://www.hackerrank.com/challenges/ctci-bubble-sort](https://www.hackerrank.com/challenges/ctci-bubble-sort)
 
 ```
 n = gets.strip.to_i
